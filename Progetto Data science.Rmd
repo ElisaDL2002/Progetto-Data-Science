@@ -26,7 +26,7 @@ ggplot(ADVENTURE_MICRO_FROM_SCIENTIST, aes(Date, Total_Pieces_L, colour = Latitu
   geom_point()
 ```
 
-Escludiamo i valori molto vecchi per poter analizzare quelli più recenti e attualmente in comprensibili:
+Escludiamo i valori molto vecchi per poter analizzare quelli più recenti e attualmente incomprensibili:
 
 ```{r}
 Recent_ADVENTURE_SCIENTIST <- filter(ADVENTURE_MICRO_FROM_SCIENTIST, Date >= "2013-07-01")
